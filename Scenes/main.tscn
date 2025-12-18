@@ -1,0 +1,65 @@
+[gd_scene load_steps=8 format=3 uid="uid://ubjsixtvqwd2"]
+
+[ext_resource type="Script" uid="uid://cubxos1om17hg" path="res://Scripts/main.gd" id="1_8gbba"]
+[ext_resource type="FontFile" uid="uid://bgh0mu7npe7f4" path="res://Assets/ByteBounce.ttf" id="3_8gbba"]
+[ext_resource type="Texture2D" uid="uid://bpmmbund614ad" path="res://Assets/LocalizedGameNames/name_en.svg" id="3_jjvhh"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8gbba"]
+sky_top_color = Color(0.577656, 0.2789338, 0.44376802, 1)
+sky_horizon_color = Color(0.8269464, 0.696545, 0.7701938, 1)
+ground_bottom_color = Color(0.48530215, 0.26241872, 0.39217967, 1)
+ground_horizon_color = Color(0.8269464, 0.696545, 0.7701938, 1)
+energy_multiplier = 0.7
+
+[sub_resource type="Sky" id="Sky_jjvhh"]
+sky_material = SubResource("ProceduralSkyMaterial_8gbba")
+
+[sub_resource type="Environment" id="Environment_kry3j"]
+background_mode = 2
+sky = SubResource("Sky_jjvhh")
+tonemap_mode = 2
+sdfgi_enabled = true
+glow_enabled = true
+
+[sub_resource type="LabelSettings" id="LabelSettings_jjvhh"]
+font = ExtResource("3_8gbba")
+font_size = 64
+
+[node name="Main" type="Node3D" node_paths=PackedStringArray("score_label")]
+script = ExtResource("1_8gbba")
+score_label = NodePath("ScoreLabel")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_kry3j")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.89176595, 0, -0.452497, 0.24164595, 0.845467, 0.47622776, 0.38257125, -0.53402776, 0.75395864, -2.3771539, 1.0112077, 0.053797722)
+
+[node name="Balloonsy" type="Node" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.89894783, 5.35239)
+size = 5.854
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.047
+anchor_top = 0.07
+anchor_right = 0.3515625
+anchor_bottom = 0.17901234
+theme_override_fonts/font = ExtResource("3_8gbba")
+theme_override_font_sizes/font_size = 64
+text = "WYNIK: 0"
+label_settings = SubResource("LabelSettings_jjvhh")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -432.0
+offset_bottom = 191.0
+grow_horizontal = 0
+texture = ExtResource("3_jjvhh")
+expand_mode = 1
+stretch_mode = 5

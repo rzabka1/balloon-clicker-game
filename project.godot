@@ -1,0 +1,50 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Baloon Popper"
+config/name_localized={
+"cs": "Praskání Balónků",
+"de": "Ballonknacker",
+"sk": "Praskač Balónov"
+}
+run/main_scene="res://Scenes/main.tscn"
+config/features=PackedStringArray("4.5", "Forward Plus")
+boot_splash/bg_color=Color(1, 0.431611, 0.62301296, 1)
+boot_splash/fullsize=false
+boot_splash/image="uid://d4gx4rj5qkbp1"
+config/icon="uid://im2uncwb2uam"
+boot_splash/minimum_display_time=1500
+
+[display]
+
+window/size/mode=3
+mouse_cursor/custom_image="uid://divl4lqlcwh6r"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_sfxr/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "pink",
+"res://Localizations/": "blue",
+"res://Scenes/": "orange",
+"res://Scripts/": "green"
+}
+
+[internationalization]
+
+locale/translation_remaps={
+"res://Assets/LocalizedGameNames/name_en.svg": PackedStringArray("res://Assets/LocalizedGameNames/name_en.svg:en", "res://Assets/LocalizedGameNames/name_de.svg:de", "res://Assets/LocalizedGameNames/name_cs.svg:cs", "res://Assets/LocalizedGameNames/name_sk.svg:sk")
+}
+locale/translations=PackedStringArray("res://Localizations/tlumaczenia.cs.translation", "res://Localizations/tlumaczenia.de.translation", "res://Localizations/tlumaczenia.en.translation", "res://Localizations/tlumaczenia.sk.translation")
