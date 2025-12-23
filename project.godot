@@ -45,6 +45,6 @@ folder_colors={
 [internationalization]
 
 locale/translation_remaps={
-"res://Assets/LocalizedGameNames/name_en.svg": PackedStringArray("res://Assets/LocalizedGameNames/name_en.svg:en", "res://Assets/LocalizedGameNames/name_de.svg:de", "res://Assets/LocalizedGameNames/name_cs.svg:cs", "res://Assets/LocalizedGameNames/name_sk.svg:sk")
+"res://Assets/Sprites/LocalizedGameNames/name_en.svg": PackedStringArray("res://Assets/Sprites/LocalizedGameNames/name_en.svg:en", "res://Assets/Sprites/LocalizedGameNames/name_de.svg:de", "res://Assets/Sprites/LocalizedGameNames/name_cs.svg:cs", "res://Assets/Sprites/LocalizedGameNames/name_sk.svg:sk")
 }
 locale/translations=PackedStringArray("res://Localizations/translations.cs.translation", "res://Localizations/translations.de.translation", "res://Localizations/translations.en.translation", "res://Localizations/translations.sk.translation")
