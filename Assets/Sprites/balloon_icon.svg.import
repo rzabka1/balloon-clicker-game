@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmlrwaxyb2lmb"
-path="res://.godot/imported/balloon_icon.png-b93e836487be8fca3f58d7872a37bdb3.ctex"
+uid="uid://boedi77igk8fc"
+path="res://.godot/imported/balloon_icon.svg-d15fbd1a412523eb12d8cddb41c4cc64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/balloon_icon.png"
-dest_files=["res://.godot/imported/balloon_icon.png-b93e836487be8fca3f58d7872a37bdb3.ctex"]
+source_file="res://Assets/Sprites/balloon_icon.svg"
+dest_files=["res://.godot/imported/balloon_icon.svg-d15fbd1a412523eb12d8cddb41c4cc64.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

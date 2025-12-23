@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1pakmgq2u7g3"
-path="res://.godot/imported/name_de.svg-c712d8a3390d4b083554d5b22193a228.ctex"
+uid="uid://dvmkcek8e338g"
+path="res://.godot/imported/name_sk.svg-82daa72b92954ab5b13583a6036c1704.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/LocalizedGameNames/name_de.svg"
-dest_files=["res://.godot/imported/name_de.svg-c712d8a3390d4b083554d5b22193a228.ctex"]
+source_file="res://Assets/Sprites/LocalizedGameNames/name_sk.svg"
+dest_files=["res://.godot/imported/name_sk.svg-82daa72b92954ab5b13583a6036c1704.ctex"]
 
 [params]
 
